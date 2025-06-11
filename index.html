@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Landing Page Engagement Project</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f8fafc;
+      color: #1e293b;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f172a, #3b82f6);
+      color: white;
+      padding: 70px 20px 50px;
+      text-align: center;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    p.subtitle {
+      font-size: 1.1rem;
+      opacity: 0.9;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    section {
+      background: white;
+      border-radius: 16px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+      transition: transform 0.3s ease;
+    }
+
+    section:hover {
+      transform: translateY(-4px);
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      color: #1e40af;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    button {
+      display: block;
+      margin: 20px auto 0;
+      padding: 12px 24px;
+      background: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #1d4ed8;
+    }
+
+    .gallery {
+      margin-top: 20px;
+      padding: 20px;
+      background: #f1f5f9;
+      border-radius: 12px;
+      border: 2px dashed #cbd5e1;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .placeholder {
+      background: #cbd5e1;
+      height: 120px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #475569;
+      font-weight: bold;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #f0f4f8;
+      color: #64748b;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Landing Page</h1>
+    <p class="subtitle">A High-Converting Landing Page Design Focused on Engagement, Speed & Results</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Project Objective</h2>
+      <p>To design a conversion-optimized landing page that captures leads, builds trust, and drives action through a visually striking layout and interactive elements.</p>
+    </section>
+
+    <section>
+      <h2>Key Components</h2>
+      <ul>
+        <li>Hero section with compelling CTA</li>
+        <li>Interactive feature highlights</li>
+        <li>Customer testimonials with slider</li>
+        <li>Sticky sign-up bar / popup form</li>
+        <li>Mobile-first responsive design</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Design Principles</h2>
+      <ul>
+        <li><strong>Above-the-fold Impact</strong> – Engaging value prop and button instantly visible</li>
+        <li><strong>Visual Hierarchy</strong> – Strategic typography and color contrast</li>
+        <li><strong>Trust Cues</strong> – Ratings, logos, testimonials</li>
+        <li><strong>Action-Oriented Flow</strong> – Smooth scrolling, logical CTA placement</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Tech Stack</h2>
+      <p>HTML, CSS (Tailwind/Vanilla), JavaScript, GSAP/AOS (for scroll animation), Netlify (hosting)</p>
+    </section>
+
+    <section>
+      <h2>Results</h2>
+      <ul>
+        <li>🚀 2.7× more sign-ups within first 30 days</li>
+        <li>📉 Bounce rate reduced by 40%</li>
+        <li>📱 96+ Mobile PageSpeed score</li>
+      </ul>
+    </section>
+
+    <section>
+      <button id="toggleGallery">Show Visual Mockups</button>
+      <div class="gallery hidden" id="gallery">
+        <div class="placeholder">[Hero Section Screenshot]</div>
+        <div class="placeholder">[Features Overview]</div>
+        <div class="placeholder">[Signup Popup Design]</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 LaunchBoost. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("toggleGallery").addEventListener("click", function () {
+      const gallery = document.getElementById("gallery");
+      gallery.classList.toggle("hidden");
+      this.textContent = gallery.classList.contains("hidden")
+        ? "Show Visual Mockups"
+        : "Hide Visual Mockups";
+    });
+  </script>
+
+</body>
+</html>
